@@ -1,56 +1,51 @@
-/*  your css code here. If applicable */
-/* Reset */
 *{
   box-sizing:border-box;
   margin:0;
   padding:0;
 }
 
-/* Parent Layout */
 body{
   display:flex;
   min-height:100vh;
-  font-family:Arial, sans-serif;
 }
 
-/* Left Navigation */
+/* Nav */
 nav{
   background:#D7E8D4;
-  width:16.66%;   /* 1/6th */
+  flex:1;
   padding:1em;
 }
 
-/* Right Main Section */
+/* Main */
 main{
-  width:83.34%;
+  flex:5;
   display:flex;
   flex-direction:column;
 }
 
 /* Header & Footer */
-header,
-footer{
+header, footer{
   background:yellowgreen;
-  height:20vh;   /* 1/5th of viewport */
+  height:20vh;
   padding:1em;
 }
 
 /* Content Section */
-section{
+.content{
   display:flex;
-  flex:1;        /* fills remaining space */
+  flex:1;
 }
 
 /* Article */
-article{
-  width:75%;     /* 3/4th */
+.content > article{
+  flex:3 1 0%;
   min-height:60vh;
   padding:1em;
 }
 
 /* Aside */
-aside{
-  width:25%;     /* 1/4th */
+.content > aside{
+  flex:1 1 0%;
   background:#F3F6DA;
   padding:1em;
 }
