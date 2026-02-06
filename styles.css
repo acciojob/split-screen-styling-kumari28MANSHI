@@ -1,1 +1,56 @@
 /*  your css code here. If applicable */
+/* Reset */
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+/* Parent Layout */
+body{
+  display:flex;
+  min-height:100vh;
+  font-family:Arial, sans-serif;
+}
+
+/* Left Navigation */
+nav{
+  background:#D7E8D4;
+  width:16.66%;   /* 1/6th */
+  padding:1em;
+}
+
+/* Right Main Section */
+main{
+  width:83.34%;
+  display:flex;
+  flex-direction:column;
+}
+
+/* Header & Footer */
+header,
+footer{
+  background:yellowgreen;
+  height:20vh;   /* 1/5th of viewport */
+  padding:1em;
+}
+
+/* Content Section */
+section{
+  display:flex;
+  flex:1;        /* fills remaining space */
+}
+
+/* Article */
+article{
+  width:75%;     /* 3/4th */
+  min-height:60vh;
+  padding:1em;
+}
+
+/* Aside */
+aside{
+  width:25%;     /* 1/4th */
+  background:#F3F6DA;
+  padding:1em;
+}
